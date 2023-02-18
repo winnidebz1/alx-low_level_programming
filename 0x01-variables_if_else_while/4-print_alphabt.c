@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - to print all single numbers of base 10
+ * main - prints the alphabets in lower case,eclude e & q
  *
  * Return: 0(Success)
  */
 int main(void)
 {
-	int x;
-	/*to print all single numbers of base 10,loop through them*/
-	for (x = 0 ; x < 10 ; x++)
-	printf("%d", x);
-	printf("\n");
+	char lc;
+
+	for (lc = 'a' ; lc <= 'z' ; lc++)
+	{
+		if (lc != 'e' && lc != 'q')
+			putchar(lc);
+	}
+	putchar('\n');
 	return (0);
 }
+
